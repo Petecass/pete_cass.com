@@ -23,3 +23,9 @@ gulp.task('server:dist', () =>
     }
   })
 );
+
+// TODO: move to config file
+gulp.task('moveMiscFiles', () =>
+  gulp.src('app/**/**/CNAME')
+      .pipe(gulp.dest('dist'))
+);

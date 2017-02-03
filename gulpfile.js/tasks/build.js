@@ -8,7 +8,7 @@ gulp.task('build', cb =>
     ['clear:dist', 'clear:dev'],
     ['sprites', 'lint:js'],
     ['sass', 'templates'],
-    ['useref', 'images', 'fonts', 'test'],
+    ['useref', 'images', 'fonts', 'test', 'moveMiscFiles'],
     cb
   )
 );
