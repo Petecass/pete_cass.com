@@ -2,7 +2,9 @@ options:
   formatter: stylish
 files:
   include: 'app/sass/**/*.s+(a|c)ss'
-  ignore: '**/**/_sprites.scss'
+  ignore:
+    - '**/**/_sprites.scss'
+    - '**/**/_reset.scss'
 rules:
   # Extends
   extends-before-mixins: 1
